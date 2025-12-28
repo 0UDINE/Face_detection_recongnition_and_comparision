@@ -1,0 +1,20 @@
+[project]
+name = "facedetection-opencv"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "0udine",email = "oelalouaoui@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "opencv-python (>=4.12.0.88,<5.0.0.0)",
+    "scikit-learn (>=1.8.0,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "facedetection_opencv", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
